@@ -1,5 +1,6 @@
 body {
     background-color: #a3bdc9;
+    font-family: Arial, sans-serif;
 }
 input {
     border-radius: 7px;
@@ -10,13 +11,14 @@ input {
 button{
     border-radius: 7px;
     border-color: #0e9adb;
+    padding: 10px 15px;
     background-color: #d3f2ff;
 }
 
 .site-footer {
     max-width: 600px;
-    margin: 40px auto;
-    padding: 20px 30px;
+    margin: 400px auto;
+    padding: 10px 25px;
     background-color: #d3f2ff;
     color: #333;
     border-radius: 15px;
