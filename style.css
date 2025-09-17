@@ -2,5 +2,23 @@ body {
     background-color: #a3bdc9;
 }
 input {
-    border-radius: 8px;
+    border-radius: 7px;
+    border-color: #0e9adb;
+}
+
+button{
+    border-radius: 7px;
+    border-color: #0e9adb;
+}
+
+.site-footer {
+    font-size: 14px;
+    /* background-color: #dffbff; */
+    color: #333;
+    height: 100;
+    width: 40%;
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+    padding: auto;
 }
