@@ -26,4 +26,41 @@ button{
     text-align: center;
     font-family: Arial, sans-serif;
   }
-  
+table {
+    width: 60%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    box-shadow: 0 0 10px color(black);
+}
+
+caption {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+
+th {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+td {
+    border: 1px solid color( lightgrey);
+    padding: 8px;
+}
+tr{
+    text-align: center;
+}
+
+tr:nth-child(even) td {
+    background-color: white;
+}
+
+tr:hover td {
+    background-color: grey;
+}
