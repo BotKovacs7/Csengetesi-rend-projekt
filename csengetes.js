@@ -10,7 +10,7 @@ function csengetes(){
         alert("Kérlek töltsd ki az összes mezőt!");
         return;
     }
-    if (kezdora > 24 || kezdperc > 60 || orahossz > 60 || atlagszunet > 60 || nagyszunet >60){
+    if (kezdora > 24|| kezdperc > 60 || orahossz > 60|| atlagszunet > 60|| nagyszunet > 60){
         alert("Valós értékeket adj meg!")
         return;
     }
