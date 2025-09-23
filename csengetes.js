@@ -28,7 +28,6 @@ function csengetes(){
         return [ora, perc];
     }
 
-
     let sorok = document.querySelectorAll("table tr");
     for (let i = 1; i < sorok.length; i++) {
         sorok[i].children[0].innerText = "";
