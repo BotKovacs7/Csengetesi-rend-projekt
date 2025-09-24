@@ -9,12 +9,12 @@
 </head>
 <body>
     <h2>Órarend kalkulátor</h2>
-    <p>Tanítás kezdete (óra): <input type="number" name="kezdora" id="kezdora" min="0"></p>
-    <p>Tanítás kezdete (perc): <input type="number" name="kezdperc" id="kezdperc" min="0"></p>
-    <p>Órák hossza (perc): <input type="number" name="orahossz" id="orahossz" min="0"></p>
-    <p>Átlagos szünet hossza (perc): <input type="number" name="atlagszunet" id="atlagszunet" min="0"></p>
-    <p>Nagyszünet hossza (perc): <input type="number" name="nagyszunet" id="nagyszunet" min="0"></p>
-    <p>Nagyszünet ez az óra után van: <input type="number" name="nagyido" id="nagyido" min="0"></p>
+    <p>Tanítás kezdete (óra): <input type="number" name="kezdora" id="kezdora" min="0" max="23"></p>
+    <p>Tanítás kezdete (perc): <input type="number" name="kezdperc" id="kezdperc" min="0" max="59"></p>
+    <p>Órák hossza (perc): <input type="number" name="orahossz" id="orahossz" min="0" max="59"></p>
+    <p>Átlagos szünet hossza (perc): <input type="number" name="atlagszunet" id="atlagszunet" min="0" max="59"></p>
+    <p>Nagyszünet hossza (perc): <input type="number" name="nagyszunet" id="nagyszunet" min="0" max="59"></p>
+    <p>Nagyszünet ez az óra után van: <input type="number" name="nagyido" id="nagyido" min="0" max="10"></p>
     <p><button onclick="csengetes()">Csengetési rend generálása</button></p>
     
   <table>
