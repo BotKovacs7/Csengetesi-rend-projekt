@@ -40,7 +40,7 @@ function csengetes(){
         [aktualisOra, aktualisPerc] = hozzaadPercet(aktualisOra, aktualisPerc, currentOrahossz);
         let oraVege = idoFormat(aktualisOra, aktualisPerc);
 
-        sorok[i].children[0].innerText = i;
+        sorok[i].children[0].innerText = i + ".";
         sorok[i].children[1].innerText = oraKezdete + " - " + oraVege;
         sorok[i].children[2].innerText = currentOrahossz + " perc";
 
