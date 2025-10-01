@@ -35,15 +35,18 @@ function csengetes(){
     let aktualisPerc = kezdperc;
 
     for (let i = 1; i <= 8; i++) {
+        let currentOrahossz = (i === 1) ? 40 : orahossz; 
         let oraKezdete = idoFormat(aktualisOra, aktualisPerc);
-        [aktualisOra, aktualisPerc] = hozzaadPercet(aktualisOra, aktualisPerc, orahossz);
+        [aktualisOra, aktualisPerc] = hozzaadPercet(aktualisOra, aktualisPerc, currentOrahossz);
         let oraVege = idoFormat(aktualisOra, aktualisPerc);
 
-        sorok[i].children[0].innerText = i + ". óra";
+        sorok[i].children[0].innerText = i;
         sorok[i].children[1].innerText = oraKezdete + " - " + oraVege;
-        sorok[i].children[2].innerText = orahossz + " perc";
+        sorok[i].children[2].innerText = currentOrahossz + " perc";
 
-        if (i === nagyido) {
+        if (i === 1) {
+            [aktualisOra, aktualisPerc] = hozzaadPercet(aktualisOra, aktualisPerc, 5);
+        } else if (i === nagyido) {
             [aktualisOra, aktualisPerc] = hozzaadPercet(aktualisOra, aktualisPerc, nagyszunet);
         } else if (i < 8) {
             [aktualisOra, aktualisPerc] = hozzaadPercet(aktualisOra, aktualisPerc, atlagszunet);
