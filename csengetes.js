@@ -10,10 +10,6 @@ function csengetes(){
         alert("Kérlek töltsd ki az összes mezőt!");
         return;
     }
-    if (kezdora > 24|| kezdperc > 60 || orahossz > 60|| atlagszunet > 60|| nagyszunet > 60){
-        alert("Valós értékeket adj meg!")
-        return;
-    }
     function idoFormat(ora, perc) {
         return (ora < 10 ? "0" + ora : ora) + ":" + (perc < 10 ? "0" + perc : perc);
     }
